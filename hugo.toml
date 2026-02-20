@@ -1,1 +1,4 @@
+baseURL = "https://building-regulations-atlas.netlify.app/"
+languageCode = "en-us"
+title = "Building Regulations Atlas"
 theme = "ananke"
