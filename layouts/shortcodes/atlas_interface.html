@@ -1,0 +1,14 @@
+<div style="padding: 20px; border: 2px solid #002d62; border-radius: 8px; background: #f9f9f9;">
+    <h3>Explore the Atlas</h3>
+    <label for="country-select"><strong>Select a Country:</strong></label><br>
+    <select id="country-select" onchange="window.location.href=this.value;" style="padding: 10px; width: 100%; margin-top: 10px;">
+        <option value="">-- Choose a Country --</option>
+        {{ range $.Site.Data.countries }}
+        <option value="/countries/{{ .name | urlize }}">{{ .name }}</option>
+        {{ end }}
+    </select>
+    
+    <div style="margin-top: 20px; font-style: italic; color: #666;">
+        <p>Interactive Map loading from: <strong>atlas_data.json</strong></p>
+    </div>
+</div>
